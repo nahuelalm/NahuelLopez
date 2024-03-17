@@ -1,0 +1,23 @@
+{
+  "name": "NahuelLopez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahuioh/NahuelLopez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahuioh/NahuelLopez/issues"
+  },
+  "homepage": "https://github.com/nahuioh/NahuelLopez#readme",
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
+}
