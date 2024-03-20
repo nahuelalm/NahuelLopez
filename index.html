@@ -13,6 +13,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img width="32px" height="32px" src="/images/nl-logo.png" alt="Nahuel López Logo Image" class="rounded-circle mr-2">
     <a class="navbar-brand" href="#">Nahuel López</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +28,15 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid">
-    <div class="row align-items-center" id="sobremi">
-      <div class="col-md-6">
-        <img src="images/wfh_1.svg" alt="Nahuel Lopez" loading="lazy" class="img-fluid">
+  <div class="container-fluid home-hero">
+    <div class="row align-items-center " id="sobremi">
+      <div class="col-md-6 w-50">
+        <div class="img-fluid">
+          <img src="images/hero-picture.svg" alt="Descripción de la imagen">
+        </div>
       </div>
       <div class="col-md-6">
-        <div class="card animate__animated animate__shakeX">
+        <div class="card">
           <div class="card-body">
             <div class="card-title">Sobre Mí</div>
             <div class="card-text">
@@ -43,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row animate-on-scroll">
       <div class="col-12">
         <div class="card">
           <div class="card-body">
@@ -55,26 +58,29 @@
         </div>
       </div>
     </div>
-    <div class="row" id="habilidades" >
+
+    <div class="row animate-on-scroll" id="habilidades">
       <div class="col-12 text-center">Mis mejores habilidades</div>
-      <div class="col-md-12 justify-content-center d-flex">
+      <div class="col-md-6 justify-content-center d-flex">
         <img src="icons/icons8-html-5.svg" alt="HTML5" class="img-thumbnail">
         <img src="icons/icons8-css3.svg" alt="" loading="lazy" class="img-thumbnail" />
         <img src="icons/icons8-javascript.svg" alt="" loading="lazy" class="img-thumbnail" />
+      </div>
+      <div class="col-md-6 justify-content-center d-flex">
         <img src="icons/icons8-bootstrap.svg" alt="" loading="lazy" class="img-thumbnail" />
         <img src="icons/icons8-react-native.svg" alt="" loading="lazy" class="img-thumbnail" />
         <img src="icons/icons8-git.svg" alt="" loading="lazy" class="img-thumbnail" />
       </div>
       <!-- Aquí van más habilidades -->
     </div>
-    <div class="row" id="proyectos">
+    <div class="row animate-on-scroll" id="proyectos">
       <div class="col-12">
         <h2 class="text-center">Algunos de mis proyectos recientes</h2>
       </div>
       <!-- Aquí van los proyectos -->
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="img-fluid" />
+          <img src="images/background.svg" alt="rastreador-de-gastos" loading="lazy" class="img-fluid" />
           <div class="card-body">
             <div class="card-title">Rastreador de Gastos</div>
             <div class="card-text">
@@ -91,24 +97,24 @@
       </div>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="images/netflixClone.png" alt="netflic-clone" loading="lazy" class="img-fluid" />
+          <img src="images/background.svg" alt="netflic-clone" loading="lazy" class="img-fluid" />
           <div class="card-body">
             <div class="card-title">Netflix Clone</div>
-              <div class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                ratione vel inventore labore commodi modi quos culpa aut saepe!
-                Alias!
-              </div>
-              <a class="link-opacity-10-hover" href="#" target="_blank">
-                <i class="fas fa-link"></i>
-                Icon link
-              </a>
+            <div class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
             </div>
+            <a class="link-opacity-10-hover" href="#" target="_blank">
+              <i class="fas fa-link"></i>
+              Icon link
+            </a>
+          </div>
         </div>
       </div>
       <div class="col-md-4 mb-3 mb-3">
         <div class="card">
-          <img src="images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="img-fluid" />
+          <img src="images/background.svg" alt="greeny-earth" loading="lazy" class="img-fluid" />
           <div class="card-body">
             <div class="card-title">Greeny Earth</div>
             <div class="card-text">
