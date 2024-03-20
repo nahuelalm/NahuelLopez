@@ -2,11 +2,12 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serif;
+  --font-family: "system-ui", "Helvetica Neue", "Segoe UI", "Oxygen, Ubuntu, Cantarell", "Open Sans", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
+  --text-color: #000;
   --primary-color: #4756df;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
@@ -16,15 +17,18 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-/* Variables fin */
- 
-/*
+
+/* Estilos */
+p, h1, h2, h3, h4, h5, h6, span, div, a {
+  color: var(--text-color); /* Usa la variable para el color */
+  font-family: var(--font-family); /* Usa la variable para la fuente */
+}
 
 /* Definir animaciones personalizadas si es necesario Intersection Observer*/
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity var(--transition) ease, transform var(--transition) ease;
   transition-delay: .3s;
 }
 
@@ -33,14 +37,3 @@
   transition-delay: .5s;
   transform: translateY(0);
 }
-
-.home-hero {
-  color: #fff;
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../images/background.svg);
-  background-position: center;
-  height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
-  position: relative;
-}
-

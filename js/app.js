@@ -12,7 +12,7 @@
   const observer = new IntersectionObserver(animateOnScroll, {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5 // Cambiar según sea necesario
+    threshold: 0.2 // Cambiar según sea necesario
   });
 
   // Seleccionar los elementos que deseas animar
