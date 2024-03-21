@@ -1,39 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-
-/* Variables */
-:root {
-  --font-family: "system-ui", "Helvetica Neue", "Segoe UI", "Oxygen, Ubuntu, Cantarell", "Open Sans", sans-serif;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --text-color: #000;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
-  --transition: 0.3s;
+p, h1, h2, h3, h4, h5, h6, span, div, a{
+  color: #888;  /* Usa la variable para el color */
+  font-family: "system-ui", "Helvetica Neue", "Segoe UI", "Oxygen, Ubuntu, Cantarell", "Open Sans", sans-serif;
 }
-
-/* Estilos */
-p, h1, h2, h3, h4, h5, h6, span, div, a {
-  color: var(--text-color); /* Usa la variable para el color */
-  font-family: var(--font-family); /* Usa la variable para la fuente */
-}
-
-/* Definir animaciones personalizadas si es necesario Intersection Observer*/
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity var(--transition) ease, transform var(--transition) ease;
   transition-delay: .3s;
 }
-
 .animated-on-scroll {
   opacity: 1;
   transition-delay: .5s;
   transform: translateY(0);
+}
+.shadow-sm {
+  box-shadow: #2f3E44;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 8px;
 }

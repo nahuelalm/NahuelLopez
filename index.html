@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <img width="32px" height="32px" src="images/nl-logo.png" alt="Nahuel López Logo Image" class="rounded-circle mr-2">
-    <a class="navbar-brand" href="#">Nahuel López</a>
+<body class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="d-flex align-items-center">
+      <img width="40px" height="40px" src="images/nl-logo.png" alt="Nahuel López Logo Image" class="rounded-circle mr-2">
+      <a class="navbar-brand" href="#">Nahuel López</a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,114 +27,265 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid home-hero">
-    <div class="row align-items-center " id="sobremi">
+  <div class=" home-hero ">
+    <div class="row align-items-center mb-5" id="sobremi">
       <div class="col-md-6 w-50">
         <div class="img-fluid">
           <img src="images/hero-picture.svg" alt="Descripción de la imagen">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card">
+        <div class="shadow-sm card">
           <div class="card-body">
-            <div class="card-title">Sobre Mí</div>
+            <div class="card-title font-weight-bold">Sobre Mí</div>
             <div class="card-text">
-              <!-- Aquí va el texto sobre mí -->
+              Soy Nahuel López Molinari, un desarrollador frontend con formación en Tecnología en Computación por la
+              Universidad de la República.
+              Me especialicé en Desarrollo de Aplicaciones Web y obtuve varias certificaciones en diseño web responsive,
+              algoritmos y estructuras de datos en JavaScript,
+              y Redux con React hooks y GraphQL.
+            </div>
+            <div class="card-text">
+              Mi objetivo es seguir creciendo como profesional y contribuir al desarrollo de soluciones web innovadoras
+              y de calidad.
+              Actualmente estoy buscando nuevas oportunidades laborales donde pueda aplicar mis habilidades y
+              conocimientos para continuar
+              desarrollándome y aportando valor a proyectos emocionantes.
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row animate-on-scroll">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">Más sobre Mí</div>
-            <div class="card-text">
-              <!-- Aquí va el contenido adicional -->
+  </div>
+  <div class="row animate-on-scroll mb-5">
+    <div class="col-12">
+      <div class="shadow-sm card">
+        <div class="card-body">
+          <h1>Certificaciones y Cursos</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Crypto Lemon</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Diciembre de 2023<br>
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Foundations of Business Intelligence</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Noviembre de 2023<br>
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">The Path to Insights: Data Models and Pipelines</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Noviembre de 2023
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Project Initiation: Starting a Successful Project</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Septiembre de 2023
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Agile Project Management</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Septiembre de 2023
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Foundations of Project Management</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Septiembre de 2023
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Project Execution: Running the Project</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Septiembre de 2023
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Project Planning: Putting It All Together</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Septiembre de 2023<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Front End Development Libraries</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Noviembre de 2022
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">JavaScript Ultimate Guide 2022</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Julio de 2022
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Aprende Typescript de 0 a 100</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Julio de 2021
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">React native Expo for multiplatform mobile app development</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Julio de 2021
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Google Cloud Platform Fundamentals: Core Infrastructure</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Junio de 2021
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Aprende Redux con React hooks y GraphQL fácilmente</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Mayo de 2021
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Como implementar GitFlow en Gitlab y Github</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Mayo de 2021
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">JavaScript Algorithms and Data Structures</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Enero de 2021
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Responsive Web Design</h5>
+                  <p class="card-text">
+                    <strong>Expedición:</strong> Enero de 2021
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="row animate-on-scroll mb-5" id="habilidades">
+    <h2 class="col-12 text-center">Mis mejores habilidades</h2>
+    <div class="col-12 justify-content-center d-flex">
+      <img src="icons/icons8-html-5.svg" alt="HTML5" class="img-thumbnail mr-2 mb-2">
+      <img src="icons/icons8-css3.svg" alt="" loading="lazy" class="img-thumbnail mr-2 mb-2 mb-2" />
+      <img src="icons/icons8-javascript.svg" alt="" loading="lazy" class="img-thumbnail mr-2 mb-2" />
 
-    <div class="row animate-on-scroll" id="habilidades">
-      <div class="col-12 text-center">Mis mejores habilidades</div>
-      <div class="col-md-6 justify-content-center d-flex">
-        <img src="icons/icons8-html-5.svg" alt="HTML5" class="img-thumbnail">
-        <img src="icons/icons8-css3.svg" alt="" loading="lazy" class="img-thumbnail" />
-        <img src="icons/icons8-javascript.svg" alt="" loading="lazy" class="img-thumbnail" />
-      </div>
-      <div class="col-md-6 justify-content-center d-flex">
-        <img src="icons/icons8-bootstrap.svg" alt="" loading="lazy" class="img-thumbnail" />
-        <img src="icons/icons8-react-native.svg" alt="" loading="lazy" class="img-thumbnail" />
-        <img src="icons/icons8-git.svg" alt="" loading="lazy" class="img-thumbnail" />
-      </div>
-      <!-- Aquí van más habilidades -->
     </div>
-    <div class="row animate-on-scroll" id="proyectos">
-      <div class="col-12">
-        <h2 class="text-center">Algunos de mis proyectos recientes</h2>
-      </div>
-      <!-- Aquí van los proyectos -->
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <img src="images/background.svg" alt="rastreador-de-gastos" loading="lazy" class="img-fluid" />
-          <div class="card-body">
-            <div class="card-title">Rastreador de Gastos</div>
-            <div class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              ratione vel inventore labore commodi modi quos culpa aut saepe!
-              Alias!
-            </div>
-            <a class="link-opacity-10-hover" href="#" target="_blank">
-              <i class="fas fa-link"></i>
-              Icon link
-            </a>
+    <div class="col-12 justify-content-center d-flex">
+      <img src="icons/icons8-bootstrap.svg" alt="" loading="lazy" class="img-thumbnail mr-2 mb-2" />
+      <img src="icons/icons8-react-native.svg" alt="" loading="lazy" class="img-thumbnail mr-2 mb-2" />
+      <img src="icons/icons8-git.svg" alt="" loading="lazy" class="img-thumbnail mr-2 mb-2" />
+    </div>
+    <!-- Aquí van más habilidades -->
+  </div>
+  <div class="row animate-on-scroll" id="proyectos">
+    <div class="col-12">
+      <h2 class="text-center">Algunos de mis proyectos recientes</h2>
+    </div>
+    <!-- Aquí van los proyectos -->
+    <div class="col-md-4 mb-2">
+      <div class="shadow-sm card">
+        <img src="images/background.svg" alt="rastreador-de-gastos" loading="lazy" class="img-fluid" />
+        <div class="card-body">
+          <div class="card-title font-weight-bold">Rastreador de Gastos</div>
+          <div class="card-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
           </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <img src="images/background.svg" alt="netflic-clone" loading="lazy" class="img-fluid" />
-          <div class="card-body">
-            <div class="card-title">Netflix Clone</div>
-            <div class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              ratione vel inventore labore commodi modi quos culpa aut saepe!
-              Alias!
-            </div>
-            <a class="link-opacity-10-hover" href="#" target="_blank">
-              <i class="fas fa-link"></i>
-              Icon link
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3 mb-3">
-        <div class="card">
-          <img src="images/background.svg" alt="greeny-earth" loading="lazy" class="img-fluid" />
-          <div class="card-body">
-            <div class="card-title">Greeny Earth</div>
-            <div class="card-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              ratione vel inventore labore commodi modi quos culpa aut saepe!
-              Alias!
-            </div>
-            <a class="link-opacity-10-hover" href="#" target="_blank">
-              <i class="fas fa-link"></i>
-              Icon link
-            </a>
-          </div>
+          <a class="link-opacity-10-hover" href="#" target="_blank">
+            <i class="fas fa-link"></i>
+            Icon link
+          </a>
         </div>
       </div>
     </div>
+    <div class="col-md-4 mb-2">
+      <div class="shadow-sm card">
+        <img src="images/background.svg" alt="netflic-clone" loading="lazy" class="img-fluid" />
+        <div class="card-body">
+          <div class="card-title font-weight-bold">Netflix Clone</div>
+          <div class="card-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </div>
+          <a class="link-opacity-10-hover" href="#" target="_blank">
+            <i class="fas fa-link"></i>
+            Icon link
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-2">
+      <div class="shadow-sm card">
+        <img src="images/background.svg" alt="greeny-earth" loading="lazy" class="img-fluid" />
+        <div class="card-body">
+          <div class="card-title font-weight-bold">Greeny Earth</div>
+          <div class="card-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </div>
+          <a class="link-opacity-10-hover" href="#" target="_blank">
+            <i class="fas fa-link"></i>
+            Icon link
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Scripts al final del body -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+  <!-- Scripts al final del body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
