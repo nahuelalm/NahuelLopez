@@ -16,37 +16,18 @@
 </head>
 
 <body class="container-fluid bg_animate">
-  <!-- Contenedor de burbujas animadas -->
-  <div class="burbujas">
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-    <div class="burbuja"></div>
-  </div>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-dark">
     <div class="d-flex align-items-center">
       <img width="40px" height="40px" src="icons/favicon-32x32.png" alt="Nahuel López Logo Image"
         class="rounded-circle mr-2">
-      <a class="navbar-brand" href="#">Nahuel López</a>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#sobremi">Acerca de Mí</a></li>
-        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-      </ul>
+    <div class="social-icons">
+      <a href="mailto:nahuel.alm@outlook.com" class="text-decoration-none mr-1"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" class="text-decoration-none mr-1"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/nahuioh" target="_blank" class="text-decoration-none mr-1"><i
+          class="fab fa-github"></i></a>
     </div>
   </nav>
   <!-- IMAGEN + ACERCA DE MI -->
@@ -60,18 +41,14 @@
       <div class="col-md-6">
         <h2 class="text-center mb-4">Sobre Mí</h2>
         <div class="card-text">
-          Soy Nahuel López Molinari, un desarrollador frontend con formación en Tecnología en Computación por la
-          Universidad de la República.
-          Me especialicé en Desarrollo de Aplicaciones Web y obtuve varias certificaciones en diseño web responsive,
-          algoritmos y estructuras de datos en JavaScript,
-          y Redux con React hooks y GraphQL.
+          Como desarrollador frontend, me especializo en la creación de experiencias web dinámicas y atractivas. He
+          dedicado tiempo a perfeccionar mis habilidades en el Desarrollo de Aplicaciones Web, obteniendo
+          certificaciones en diseño web responsive, algoritmos y estructuras de datos en JavaScript.
         </div>
         <div class="card-text">
-          Mi objetivo es seguir creciendo como profesional y contribuir al desarrollo de soluciones web innovadoras
-          y de calidad.
-          Actualmente estoy buscando nuevas oportunidades laborales donde pueda aplicar mis habilidades y
-          conocimientos para continuar
-          desarrollándome y aportando valor a proyectos emocionantes.
+          Mi objetivo es continuar creciendo como profesional en el campo del desarrollo web, buscando constantemente
+          nuevas oportunidades para aprender y aplicar tecnologías innovadoras. Estoy comprometido a contribuir al
+          desarrollo de soluciones web de calidad que ofrezcan experiencias únicas y satisfactorias a los usuarios.
         </div>
       </div>
     </div>
@@ -95,6 +72,13 @@
             <i class="fas fa-link"></i>
             Ver Aplicación
           </a>
+          <div class="badge-container">
+            <span class="badge badge-primary">React.js</span>
+            <span class="badge badge-primary">Next.js</span>
+            <span class="badge badge-primary">Typescript</span>
+            <span class="badge badge-primary">CSS</span>
+            <!-- Agrega más badges según las tecnologías utilizadas -->
+          </div>
         </div>
       </div>
     </div>
@@ -134,7 +118,7 @@
     </div>
   </div>
   <!-- CERTIFICACIONES -->
-  <div class="row animate-on-scroll mb-4">
+  <div class="row animate-on-scroll">
     <div class="col-12">
       <h2 class="text-center mb-4">Certificaciones y Cursos</h2>
       <div class="row">
@@ -329,21 +313,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- HABILIDADES -->
-  <div class="row animate-on-scroll" id="habilidades">
-    <h2 class="col-12 text-center mb-3">Mis mejores habilidades</h2>
-    <div class="col-12 justify-content-center d-flex">
-      <img src="icons/icons8-html-5.svg" alt="HTML5" class=" mr-2 mb-2">
-      <img src="icons/icons8-css3.svg" alt="" loading="lazy" class=" mr-2 mb-2 mb-2" />
-      <img src="icons/icons8-javascript.svg" alt="" loading="lazy" class=" mr-2 mb-2" />
-
-    </div>
-    <div class="col-12 justify-content-center d-flex">
-      <img src="icons/icons8-bootstrap.svg" alt="" loading="lazy" class=" mr-2 mb-2" />
-      <img src="icons/icons8-react-native.svg" alt="" loading="lazy" class=" mr-2 mb-2" />
-      <img src="icons/icons8-git.svg" alt="" loading="lazy" class=" mr-2 mb-2" />
     </div>
   </div>
   <!-- Scripts al final del body -->
