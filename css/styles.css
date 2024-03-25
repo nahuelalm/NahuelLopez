@@ -1,146 +1,134 @@
+:root {
+  --control-border-color: #40424e;
+  --control-background-color: #222531;
+  --control-caret-color: #858ca2;
+  --control-dropdown-background-color: #323546;
+  --theme-color: #6188ff;
+  --theme-light-color: #171924;
+  --theme-light-blue-color: rgba(56, 97, 251, .1);
+  --bt-light-blue: rgba(56, 97, 251, .1);
+  --theme-light-blue: rgba(56, 97, 251, .1);
+  --theme-light-blue-font: #6188ff;
+  --text-color: #fff;
+  --info-icon-color: #636c7f;
+  --text-color-sub: #a1a7bb;
+  --text-color-sub-1: #fff;
+  --text-color-error: #ea3943;
+  --border-color: #222531;
+  --border-color-1: #262628;
+  --bg-color: #17171a;
+  --color-primary-black: #fff;
+  --color-primary-white: #000;
+  --color-primary-blue: #6188ff;
+  --step-light-color: #3b4d83;
+  --arrow-icon-color: #fff;
+  --color-neutral-1: #171924;
+  --color-neutral-2: #222531;
+  --color-neutral-3: #323546;
+  --color-neutral-4: #646b80;
+  --color-neutral-5: #858ca2;
+  --color-neutral-6: #a1a7bb;
+  --color-light-neutral-1: #222531;
+  --color-light-neutral-2: #323546;
+  --color-light-neutral-3: #262628;
+  --color-light-neutral-4: #646b80;
+  --color-light-neutral-5: #858ca2;
+  --color-light-neutral-6: #a1a7bb;
+  --color-light-neutral-7: #646b80;
+  --color-gradient-end: rgba(34, 37, 49, 0);
+  --button-border-color: #323546;
+  --button-bg-color: #cfd6e4;
+  --dark-bg: #323546;
+  --card-bg: #292d3f;
+  --box-shadow: 0px 0px 1px 0px #646b80;
+  --tiny-box-shadow: 0px 4px 24px rgba(88, 102, 126, .08), 0px 1px 2px rgba(88, 102, 126, .12);
+  --input-shadow-color-focus: rgba(56, 97, 251, .3);
+  --shadow-normal: 0px 4px 24px #171924, 0px 1px 2px #171924;
+}
+
+.NIGHT {
+  --c-color-gray-100: #222531;
+  --c-color-gray-200: #323546;
+  --c-color-gray-300: #53596A;
+  --c-color-gray-400: #646B80;
+  --c-color-gray-500: #858CA2;
+  --c-color-gray-600: #A1A7BB;
+  --c-color-background-1: #171924;
+  --c-color-background-2: #0D1421;
+  --c-color-surface-1: #222531;
+  --c-color-surface-2: #2B2E3D;
+  --c-color-text-primary: #FFFFFF;
+  --c-color-text-secondary: #A1A7BB;
+  --c-color-text-caption: #646B80;
+  --c-color-text-hyperlink: #6188FF;
+  --c-color-negative-bg: #411F2A;
+  --c-color-positive-bg: #173C37;
+  --c-color-reminder-bg: #433936;
+  --c-color-official-bg: #1E274F;
+  --c-color-no-access-bg: #323546;
+  --c-color-overlay-bg: rgba(23, 25, 36, 0.6);
+  --c-shadow-tiny: 0px 1px 2px 0px rgba(13, 20, 33, 0.24), 0px 4px 24px 0px rgba(13, 20, 33, 0.12);
+  --c-shadow-overlay: 0px 8px 32px 0px #0D1421, 0px 1px 2px 0px #0D1421;
+}
+
+/* Aquí puedes añadir tus estilos específicos para cada clase o elemento */
+
+/* Estilos comunes */
 body {
   font-family: "-apple-system" !important;
 }
 
-
-/* Color Theme Swatches in Hex */
-.card-title,
-h1,
-h2 {
-  color: #E2E8F0;
+/* Estilos para el modo oscuro */
+.theme-dark {
+  background: #000;
+  body {
+    /*color: */ 
+    background: #000;
+  }
+  
+  .card-text {
+    /*color: */ 
+  }
 }
 
+/* Estilos para el modo claro */
+.theme-light {
+  /*color: */ 
+  
+  body {
+    /*color: */ 
+  }
+}
+
+/* Estilos de las tarjetas */
 .card {
   background: transparent;
-  border-color: #416CA6;
+  /*border-color: */ 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .card-text {
-  color: #94A4B8;
-}
-
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transition-delay: .3s;
-}
-
-.animated-on-scroll {
-  opacity: 1;
-  transition-delay: .5s;
-  transform: translateY(0);
-}
-
-.shadow-sm {
-  box-shadow: #2f3E44;
+  /*color: */ 
 }
 
 .card-title {
+  /*color: */ 
   font-size: 16px;
   margin-bottom: 8px;
+  transition: color 0.3s ease;
 }
 
-/*ANIMACION*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 1px 2px 
 }
 
-.contenedor {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.bg_animate {
-  overflow-x: hidden;
-  background: #0D1117;
-}
-
-.header_nav {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.header_nav .contenedor {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-}
-
-.header_nav h1 {
-  color: #fff;
-}
-
-.header_nav nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.banner_title h2 {
-  color: #fff;
-  font-size: 60px;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.banner_title .llamanos {
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  background: #1A2849;
-  padding: 20px;
+.card:hover .card-title {
+  /*color: */
 }
 
 .banner_img {
   animation: movimiento 3.0s linear infinite;
-}
-
-@keyframes movimiento {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(30px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px) rotate(1deg);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  background-color: #0F0F0F;
-}
-
-.card-title {
-  transition: color 0.3s ease;
-}
-
-.card:hover .card-title {
-  color: #007bff;
 }
 
 .badge-container {
@@ -151,19 +139,53 @@ h2 {
   display: inline-block;
   padding: 5px 10px;
   border-radius: 20px;
-  background-color: #E2E8F0;
-  /* Color de fondo del badge */
-  color: #0F0F0F;
-  /* Color del texto del badge */
+  /*background-color: */
+  /*color: */
   margin-right: 5px;
-  /* Espacio entre badges */
 }
 
 .social-icons a {
-  color: #E2E8F0; /* Color de los iconos de redes sociales */
-  font-size: 24px; /* Tamaño de los iconos de redes sociales */
+  /*color: */
+  font-size: 24px;
+  margin-right: 8px;
 }
 
 .social-icons a:hover {
-  color: #17a2b8; /* Cambio de color al hacer hover sobre los iconos de redes sociales */
+  /*color: */
+}
+
+/* Estilos del toggle */
+.toggle-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch i {
+  /*color: */
+  font-size: 23px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Animación */
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

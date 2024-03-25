@@ -10,25 +10,35 @@
   <link rel="icon" href="icons/favicon-16x16.png" type="image/x-icon">
   <!-- Estilos CSS externos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="container-fluid bg_animate">
+<body class="container-fluid bg_animate  theme-light">
   <!-- NAVBAR -->
   <nav class="navbar navbar-dark">
     <div class="d-flex align-items-center">
       <img width="40px" height="40px" src="icons/favicon-32x32.png" alt="Nahuel López Logo Image"
         class="rounded-circle mr-2">
     </div>
-    <div class="social-icons">
-      <a href="mailto:nahuel.alm@outlook.com" class="text-decoration-none mr-1"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" class="text-decoration-none mr-1"><i
-          class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/nahuioh" target="_blank" class="text-decoration-none mr-1"><i
-          class="fab fa-github"></i></a>
-    </div>
+    <div class="d-flex align-items-center">
+      <div class="social-icons mr-2">
+        <a href="mailto:nahuel.alm@outlook.com" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" class="text-decoration-none"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nahuioh" target="_blank" class="text-decoration-none"><i
+            class="fab fa-github"></i></a>
+      </div>
+      <label class="form-switch toggle-switch">
+        <input class="form-check-input" type="checkbox" id="themeToggle">
+        <i class="far fa-sun"></i>
+        <i class="far fa-moon hidden"></i>
+      </label>
+      
+
+    </div>   
   </nav>
   <!-- IMAGEN + ACERCA DE MI -->
   <div class="home-hero mb-4 pb-2">
@@ -122,50 +132,7 @@
     <div class="col-12">
       <h2 class="text-center mb-4">Certificaciones y Cursos</h2>
       <div class="row">
-        <div class="col-lg-6">
-          <div class="card mb-2">
-            <div class="card-body">
-              <a href="https://curso.lemon.me/certificates/sy0mrvzz9b" target="_blank" class="text-decoration-none">
-                <h5 class="card-title">Crypto Lemon</h5>
-              </a>
-              <p class="card-text">
-                <strong>Expedición:</strong> Diciembre de 2023<br>
-              </p>
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              <a href="https://www.coursera.org/account/accomplishments/certificate/HTHPMC7JDK2E" target="_blank"
-                class="text-decoration-none">
-                <h5 class="card-title">Foundations of Business Intelligence</h5>
-              </a>
-              <p class="card-text">
-                <strong>Expedición:</strong> Noviembre de 2023<br>
-              </p>
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              <a href="https://www.coursera.org/account/accomplishments/certificate/CZ62ZUFNKC7R" target="_blank"
-                class="text-decoration-none">
-                <h5 class="card-title">The Path to Insights: Data Models and Pipelines</h5>
-              </a>
-              <p class="card-text">
-                <strong>Expedición:</strong> Noviembre de 2023
-              </p>
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              <a href="https://www.coursera.org/account/accomplishments/certificate/6TTLXMG6DEXT" target="_blank"
-                class="text-decoration-none">
-                <h5 class="card-title">Project Initiation: Starting a Successful Project</h5>
-              </a>
-              <p class="card-text">
-                <strong>Expedición:</strong> Septiembre de 2023
-              </p>
-            </div>
-          </div>
+        <div class="col-lg-3">
           <div class="card mb-2">
             <div class="card-body">
               <a href="https://www.coursera.org/account/accomplishments/certificate/VY674V4UM3AD" target="_blank"
@@ -211,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-3">
           <div class="card mb-2">
             <div class="card-body">
               <a href="https://www.freecodecamp.org/espanol/certification/nahuelsl/front-end-development-libraries"
@@ -249,46 +216,15 @@
             <div class="card-body">
               <a href="https://www.udemy.com/certificate/UC-9601455c-62f5-42a4-b100-536cbf5ec3d5/" target="_blank"
                 class="text-decoration-none">
-                <h5 class="card-title">React native Expo for multiplatform mobile app development</h5>
+                <h5 class="card-title">React native Expo for multiplatform mobile</h5>
               </a>
               <p class="card-text">
                 <strong>Expedición:</strong> Julio de 2021
               </p>
             </div>
           </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              <a href="https://www.coursera.org/account/accomplishments/certificate/DUR8T5B7HL3T" target="_blank"
-                class="text-decoration-none">
-                <h5 class="card-title">Google Cloud Platform Fundamentals: Core Infrastructure</h5>
-              </a>
-              <p class="card-text">
-                <strong>Expedición:</strong> Junio de 2021
-              </p>
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              <a href="https://www.udemy.com/certificate/UC-49767b85-261d-4cc8-bf16-2f21a69b8627/" target="_blank"
-                class="text-decoration-none">
-                <h5 class="card-title">Aprende Redux con React hooks y GraphQL fácilmente</h5>
-              </a>
-              <p class="card-text">
-                <strong>Expedición:</strong> Mayo de 2021
-              </p>
-            </div>
-          </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              <a href="https://www.udemy.com/certificate/UC-45a425a2-9dbd-4f79-984e-0a78c4ee5455/" target="_blank"
-                class="text-decoration-none">
-                <h5 class="card-title">Como implementar GitFlow en Gitlab y Github</h5>
-              </a>
-              <p class="card-text">
-                <strong>Expedición:</strong> Mayo de 2021
-              </p>
-            </div>
-          </div>
+        </div>
+        <div class="col-lg-3">
           <div class="card mb-2">
             <div class="card-body">
               <a href="https://www.freecodecamp.org/certification/nahuelsl/javascript-algorithms-and-data-structures"
@@ -311,6 +247,84 @@
               </p>
             </div>
           </div>
+          <div class="card mb-2">
+            <div class="card-body">
+              <a href="https://www.udemy.com/certificate/UC-45a425a2-9dbd-4f79-984e-0a78c4ee5455/" target="_blank"
+                class="text-decoration-none">
+                <h5 class="card-title">GitFlow en Gitlab y Github</h5>
+              </a>
+              <p class="card-text">
+                <strong>Expedición:</strong> Mayo de 2021
+              </p>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/DUR8T5B7HL3T" target="_blank"
+                class="text-decoration-none">
+                <h5 class="card-title">Google Cloud Platform Fundamentals</h5>
+              </a>
+              <p class="card-text">
+                <strong>Expedición:</strong> Junio de 2021
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-2">
+            <div class="card-body">
+              <a href="https://curso.lemon.me/certificates/sy0mrvzz9b" target="_blank" class="text-decoration-none">
+                <h5 class="card-title">Crypto Lemon</h5>
+              </a>
+              <p class="card-text">
+                <strong>Expedición:</strong> Diciembre de 2023<br>
+              </p>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/HTHPMC7JDK2E" target="_blank"
+                class="text-decoration-none">
+                <h5 class="card-title">Foundations of Business Intelligence</h5>
+              </a>
+              <p class="card-text">
+                <strong>Expedición:</strong> Noviembre de 2023<br>
+              </p>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/CZ62ZUFNKC7R" target="_blank"
+                class="text-decoration-none">
+                <h5 class="card-title">The Path to Insights</h5>
+              </a>
+              <p class="card-text">
+                <strong>Expedición:</strong> Noviembre de 2023
+              </p>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/6TTLXMG6DEXT" target="_blank"
+                class="text-decoration-none">
+                <h5 class="card-title">Project Initiation</h5>
+              </a>
+              <p class="card-text">
+                <strong>Expedición:</strong> Septiembre de 2023
+              </p>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body">
+              <a href="https://www.udemy.com/certificate/UC-49767b85-261d-4cc8-bf16-2f21a69b8627/" target="_blank"
+                class="text-decoration-none">
+                <h5 class="card-title">Redux con React hooks y GraphQL</h5>
+              </a>
+              <p class="card-text">
+                <strong>Expedición:</strong> Mayo de 2021
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -318,7 +332,6 @@
   <!-- Scripts al final del body -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
