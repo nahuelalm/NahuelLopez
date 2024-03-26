@@ -35,8 +35,9 @@ document.getElementById('themeToggle').addEventListener('change', function() {
 });  
 document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('themeToggle');
-  const sunIcon = document.querySelector('.fa-sun');
-  const moonIcon = document.querySelector('.fa-moon');
+  const sunIcon = document.querySelector('#sun-icon');
+  const moonIcon = document.querySelector('#moon-icon');
+  
   
   // Agregar un event listener para detectar cambios en el interruptor
   themeToggle.addEventListener('change', function() {
