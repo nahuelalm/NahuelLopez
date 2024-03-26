@@ -5,9 +5,7 @@ body {
     line-height: 1.6;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
@@ -33,62 +31,57 @@ a:hover {
     color: #415EA3;
 }
 
-
 /* Estilos para el modo oscuro */
 .theme-dark {
     background: #101d21;
+}
 
+.theme-dark .card-text,
+.theme-dark h2 {
+    color: #ecdfdb;
+}
 
-    .card-text,
-    h2 {
-        color: #ecdfdb;
-    }
+.theme-dark a {
+    color: #6188FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-    a {
-        color: #6188FF;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
+.theme-dark a:hover {
+    color: #415EA3;
+}
 
-    a:hover {
-        color: #415EA3;
-    }
+.theme-dark i {
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    transition: fill 0.3s ease, color 0.3s ease;
+}
 
-    i {
-        fill: #FFFFFF;
-        color: #FFFFFF;
-        transition: fill 0.3s ease, color 0.3s ease;
-    }
+.theme-dark i:hover {
+    fill: #415EA3;
+    color: #415EA3;
+}
 
-    i:hover {
-        fill: #415EA3;
-        color: #415EA3;
-    }
-
-    .badge {
-        fill: #FFFFFF;
-        padding: 5px 10px; /* Ajusta el relleno según sea necesario */
-        border: 2px solid #ccc; /* Ancho y color del borde */
-        border-radius: 20px; /* Redondea las esquinas del badge */
-        margin-bottom: 4px;
-    }
+.theme-dark .badge {
+    fill: #FFFFFF;
+    padding: 5px 10px; /* Ajusta el relleno según sea necesario */
+    border: 2px solid #ccc; /* Ancho y color del borde */
+    border-radius: 20px; /* Redondea las esquinas del badge */
+    margin-bottom: 4px;
 }
 
 /* Estilos para el modo claro */
-.theme-light {
-    .badge{
-        padding: 5px 10px; /* Ajusta el relleno según sea necesario */
-        border: 1px solid #000; /* Ancho y color del borde en modo oscuro */
-        border-radius: 20px; /* Redondea las esquinas del badge */
-        color: #fff; /* Color del texto en modo oscuro */
-        background-color: #415EA3; /* Color de fondo en modo oscuro */
-      }
+.theme-light .badge {
+    padding: 5px 10px; /* Ajusta el relleno según sea necesario */
+    border: 1px solid #000; /* Ancho y color del borde en modo claro */
+    border-radius: 20px; /* Redondea las esquinas del badge */
+    color: #fff; /* Color del texto en modo claro */
+    background-color: #415EA3; /* Color de fondo en modo claro */
 }
 
 /* Estilos de las tarjetas */
 .card {
     background: transparent;
-    /*border-color: */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -105,7 +98,7 @@ a:hover {
 
 .card:hover {
     transform: translateY(-8px) rotate(-1deg);
-    box-shadow: 0 1px 2px
+    box-shadow: 0 1px 2px;
 }
 
 .card:hover .card-title {
