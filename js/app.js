@@ -87,14 +87,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function handleResize() {
-  if (window.innerWidth >= 586) {
+  if (window.innerWidth >= 860) {
     // Si la ventana es menor que 786px, ocultar navbar y mostrar div
     document.getElementById('navbar').style.display = 'none';
-    document.getElementById('hiddenDiv').style.display = 'flex';
+    document.getElementById('navbar-desktop').style.display = 'flex';
   } else {
     // Si la ventana es mayor o igual a 786px, mostrar navbar y ocultar div
     document.getElementById('navbar').style.display = 'flex';
-    document.getElementById('hiddenDiv').style.display = 'none';
+    document.getElementById('navbar-desktop').style.display = 'none';
   }
 }
 

@@ -15,6 +15,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline'">
 </head>
 
 <body class="container-fluid bg_animate  theme-light">
@@ -34,57 +35,67 @@
               class="fab fa-github"></i></a>
         </div>
         <label class="form-switch toggle-switch" data-aos="fade-down">
-          <input class="form-check-input " type="checkbox" id="themeToggleDesktop">
-          <img id="sun-icon-desktop" src="icons/sun.svg" width="24" height="24" loading="lazy" class="img-fluid" />
-          <img id="moon-icon-desktop" src="icons/moon.svg" width="24" height="24" loading="lazy" class="hidden" />
+          <input class="form-check-input " type="checkbox" id="themeToggle">
+          <img id="sun-icon" src="icons/sun.svg" width="24" height="24" loading="lazy" class="img-fluid" />
+          <img id="moon-icon" src="icons/moon.svg" width="24" height="24" loading="lazy" class="hidden" />
         </label>
       </div>
     </nav>
-    <div class="container overflow-hidden  align-content-around" id="hiddenDiv" style="display: none;">
+    <div class="container overflow-hidden  align-content-around  h-100" id="navbar-desktop" style="display: none;">
       <div class="d-grid">
-        <div class="mt-4">
+        <div class="mt-4 d-flex">
           <img width="40px" height="40px" src="icons/favicon-32x32.png" alt="Nahuel López Logo Image"
             class="rounded-circle mr-2">
-          <h2 class="card-title mt-4"><a href="/">Nahuel Lopez</a></h2>
+          <h2 class="mt-4">Nahuel López</h2>
         </div>
-        <div class="d-flex mt-5 justify-content-between">
-          <div class="social-icons">
-            <a href="mailto:nahuel.alm@outlook.com" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" class="text-decoration-none"><i
-                class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/nahuioh" target="_blank" class="text-decoration-none"><i
-                class="fab fa-github"></i></a>
-          </div>
-          <label class="form-switch toggle-switch" data-aos="fade-down">
-            <input class="form-check-input " type="checkbox" id="themeToggle">
-            <img id="sun-icon" src="icons/sun.svg" width="32" height="32" loading="lazy" class="img-fluid" />
-            <img id="moon-icon" src="icons/moon.svg" width="32" height="32" loading="lazy" class="hidden" />
+        <div class="social-icons d-flex justify-content-between">
+          <a href="mailto:nahuel.alm@outlook.com" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" class="text-decoration-none"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/nahuioh" target="_blank" class="text-decoration-none"><i
+              class="fab fa-github"></i></a>
+          <label class="form-switch toggle-switch align-items-start" data-aos="fade-down">
+            <input class="form-check-input " type="checkbox" id="themeToggleDesktop">
+            <img id="sun-icon-desktop" src="icons/sun.svg" width="32" height="32" loading="lazy" class="img-fluid" />
+            <img id="moon-icon-desktop" src="icons/moon.svg" width="32" height="32" loading="lazy" class="hidden" />
           </label>
+        </div>
+        <div class="img-fluid banner_img">
+          <img class="w-100 h-75" src="images/logo-flotador.png" alt="Descripción de la imagen">
         </div>
       </div>
     </div>
   </aside>
   <main>
     <!-- IMAGEN + ACERCA DE MI -->
-    <div class="home-hero mb-4 mt-2">
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6">
-          <div class="img-fluid banner_img">
-            <img class="w-100 h-100" src="images/logo-flotador.png" alt="Descripción de la imagen">
-          </div>
+    <div class=" mt-2">
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <pre>1&nbsp;class <b>Person</b> <!-- -->{</pre>
+          <pre>2&nbsp;&nbsp; constructor() <!-- -->{</pre>
+          <pre>3&nbsp;&nbsp;&nbsp; this.name = "<b>Nahuel López</b>";</pre>
+          <pre>4&nbsp;&nbsp;&nbsp; this.traits = ["<b>DESIGN</b>", "<b>DEV</b>"];</pre>
+          <pre>5&nbsp;&nbsp;&nbsp; this.age = <!-- -->new Date().getFullYear() - 1993;</pre>
+          <pre>6&nbsp;&nbsp; <!-- -->}</pre>
+          <pre>7&nbsp;<!-- -->}</pre>
         </div>
-        <div class="col-md-6 move-element" data-aos="fade-up">
-          <div class="card-text">
-            Como desarrollador frontend, me especializo en la creación de experiencias web dinámicas y atractivas. He
-            dedicado tiempo a perfeccionar mis habilidades en el Desarrollo de Aplicaciones Web, obteniendo
-            certificaciones en diseño web responsive, algoritmos y estructuras de datos en JavaScript.
-          </div>
-          <div class="card-text">
-            Mi objetivo es continuar creciendo como profesional en el campo del desarrollo web, buscando constantemente
-            nuevas oportunidades para aprender y aplicar tecnologías innovadoras. Estoy comprometido a contribuir al
-            desarrollo de soluciones web de calidad que ofrezcan experiencias únicas y satisfactorias a los usuarios.
-          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 move-element mb-5" data-aos="fade-up">
+        <div class="card-text">
+          Como desarrollador frontend, me especializo en la creación de experiencias web dinámicas y atractivas. He
+          dedicado tiempo a perfeccionar mis habilidades en el Desarrollo de Aplicaciones Web, obteniendo
+          certificaciones en diseño web responsive, algoritmos y estructuras de datos en JavaScript.
         </div>
+        <div class="card-text mb-3">
+          Mi objetivo es continuar creciendo como profesional en el campo del desarrollo web, buscando constantemente
+          nuevas oportunidades para aprender y aplicar tecnologías innovadoras. Estoy comprometido a contribuir al
+          desarrollo de soluciones web de calidad que ofrezcan experiencias únicas y satisfactorias a los usuarios.
+        </div>
+        <button class="btn btn-primary ">
+          <a href="proyects/cv.pdf" download="cv.pdf" class="text-decoration-none">Descargar CV</a>
+        </button>
       </div>
     </div>
     <!-- PROYECTOS -->
@@ -338,6 +349,20 @@
         </div>
       </div>
     </div>
+    <div class="col">
+      <div class="container-iframe ">
+        <h2 class="card-title mb-4">Javascript Libraries</h2>
+        <iframe src="https://codepen.io/nahuelsl/embed/abxywJo" class="styled-iframe" frameborder="0"
+          allowfullscreen></iframe>
+        <iframe src="https://codepen.io/nahuelsl/embed/RwOZgLp" class="styled-iframe" frameborder="0" scrolling="no"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <footer class="col pt-4">
+      <p style="float:right">Made with love and<a href="https://gatsbyjs.org"
+          target="__blank">&nbsp;gatsby&nbsp;</a>by<a href="https://github.com/nahuioh"
+          target="__blank">&nbsp;Nahuel</a></p>
+    </footer>
   </main>
   <!-- Scripts al final del body -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

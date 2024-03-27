@@ -13,6 +13,9 @@ body.theme-light {
         color: #5a76cc  ;
         transition: color 0.3s ease;
     }
+    button a{
+        color:#fff;
+    }
 }
 
 h1,
@@ -46,7 +49,10 @@ a:hover {
 }
 
 .theme-dark .card-text,
-.theme-dark h2 {
+.theme-dark h2,
+.theme-dark button>a,
+.theme-dark pre,
+.theme-dark p {
     color: #E6EDF3;
 }
 .theme-dark .card {
@@ -264,3 +270,8 @@ a:hover {
 .move-element {
     animation: mover 2s forwards;
 }
+.styled-iframe {
+    width: 100%; /* Establece el ancho al 100% para ocupar todo el ancho disponible */
+    height: 400px; /* Establece la altura a 300px */
+    border-radius: 20px; /* Agrega bordes redondeados */
+  }
