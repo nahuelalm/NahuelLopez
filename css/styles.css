@@ -104,6 +104,9 @@ a:hover {
     margin-bottom: 8px;
     transition: color 0.3s ease;
 }
+.theme-light a {
+    color: #fff;
+}
 
 .card:hover {
     transform: translateY(-8px) rotate(-1deg);
@@ -223,8 +226,8 @@ a:hover {
 }
 
 .ancors-container li {
-    display: inline-block;
-    margin-right: 9px;
+    /* display: inline-block; */
+    margin-right: 24px;
 }
 
 .ancors-container a {
