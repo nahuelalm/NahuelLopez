@@ -5,7 +5,9 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
@@ -64,24 +66,33 @@ a:hover {
 
 .theme-dark .badge {
     fill: #FFFFFF;
-    padding: 5px 10px; /* Ajusta el relleno según sea necesario */
-    border: 2px solid #ccc; /* Ancho y color del borde */
-    border-radius: 20px; /* Redondea las esquinas del badge */
+    padding: 5px 10px;
+    /* Ajusta el relleno según sea necesario */
+    border: 2px solid #ccc;
+    /* Ancho y color del borde */
+    border-radius: 20px;
+    /* Redondea las esquinas del badge */
     margin-bottom: 4px;
 }
 
 /* Estilos para el modo claro */
 .theme-light .badge {
-    padding: 5px 10px; /* Ajusta el relleno según sea necesario */
-    border: 1px solid #000; /* Ancho y color del borde en modo claro */
-    border-radius: 20px; /* Redondea las esquinas del badge */
-    color: #fff; /* Color del texto en modo claro */
-    background-color: #415EA3; /* Color de fondo en modo claro */
+    padding: 5px 10px;
+    /* Ajusta el relleno según sea necesario */
+    border: 1px solid #000;
+    /* Ancho y color del borde en modo claro */
+    border-radius: 20px;
+    /* Redondea las esquinas del badge */
+    color: #fff;
+    /* Color del texto en modo claro */
+    background-color: #415EA3;
+    /* Color de fondo en modo claro */
 }
 
 /* Estilos de las tarjetas */
 .card {
     background: transparent;
+    border: 1px solid #ccc;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -173,4 +184,57 @@ a:hover {
 #moon-icon {
     cursor: pointer;
     margin-bottom: 4px;
+}
+
+/* Estilos de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilos del pulgar de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #415EA3;
+    /* Color de fondo del pulgar de desplazamiento */
+    border-radius: 3px;
+    /* Radio de borde del pulgar de desplazamiento */
+}
+
+/* Cambia el color de la barra de desplazamiento cuando está sobre ella */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6188FF;
+    /* Cambia el color de fondo del pulgar de desplazamiento al pasar el ratón */
+}
+aside {
+    padding: 0 24px 0 24px;
+}
+/* Estilos para dispositivos con una pantalla de 800px o más */
+@media (min-width: 768px) {
+
+    /* Aplica el contenedor flex y justifica el contenido al final */
+    body {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Estilos para la barra lateral */
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow-y: auto;
+        width: 25%;
+        /* background-color: #fff; */
+        /* Color de fondo de la barra lateral */
+        z-index: 1000;
+        /* Asegura que la barra lateral esté por encima del contenido */
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+        width: 75%;
+        padding: 24px;
+        margin-top: 0;
+    }
 }
