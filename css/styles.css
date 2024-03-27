@@ -4,17 +4,21 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
+
 body.theme-light {
     background: #e4e1e1;
+
     .card-text {
-        color:#003c00;
+        color: #003c00;
     }
+
     a {
-        color: #5a76cc  ;
+        color: #5a76cc;
         transition: color 0.3s ease;
     }
-    button a{
-        color:#fff;
+
+    button a {
+        color: #fff;
     }
 }
 
@@ -55,11 +59,13 @@ a:hover {
 .theme-dark p {
     color: #E6EDF3;
 }
+
 .theme-dark .card {
     background: transparent;
     border: 1px solid #eaeaea;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
 .theme-dark a {
     color: #95abec;
     text-decoration: none;
@@ -91,6 +97,7 @@ a:hover {
     /* Redondea las esquinas del badge */
     margin-bottom: 4px;
 }
+
 .theme-dark .card-title {
     color: #e6edf3;
     font-size: 16px;
@@ -201,7 +208,6 @@ a:hover {
 #sun-icon,
 #moon-icon {
     cursor: pointer;
-    margin-bottom: 4px;
 }
 
 /* Estilos de la barra de desplazamiento */
@@ -224,36 +230,6 @@ a:hover {
     /* Cambia el color de fondo del pulgar de desplazamiento al pasar el ratón */
 }
 
-/* Estilos para dispositivos con una pantalla de 800px o más */
-@media (min-width: 768px) {
-
-    /* Aplica el contenedor flex y justifica el contenido al final */
-    body {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    /* Estilos para la barra lateral */
-    aside {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        overflow-y: auto;
-        width: 25%;
-        /* background-color: #fff; */
-        /* Color de fondo de la barra lateral */
-        z-index: 1000;
-        /* Asegura que la barra lateral esté por encima del contenido */
-    }
-
-    /* Estilos para el contenido principal */
-    main {
-        width: 75%;
-        padding: 24px;
-        margin-top: 0;
-    }
-}
 
 @keyframes mover {
     0% {
@@ -270,8 +246,78 @@ a:hover {
 .move-element {
     animation: mover 2s forwards;
 }
+
 .styled-iframe {
-    width: 100%; /* Establece el ancho al 100% para ocupar todo el ancho disponible */
-    height: 400px; /* Establece la altura a 300px */
-    border-radius: 20px; /* Agrega bordes redondeados */
-  }
+    width: 100%;
+    /* Establece el ancho al 100% para ocupar todo el ancho disponible */
+    height: 400px;
+    /* Establece la altura a 300px */
+    border-radius: 20px;
+    /* Agrega bordes redondeados */
+}
+
+footer {
+    background-color: #333;
+    /* Cambia el color de fondo a tu preferencia */
+    color: #fff;
+    /* Cambia el color del texto a tu preferencia */
+    padding: 20px;
+    /* Añade espacio alrededor del contenido del footer */
+}
+
+.footer-info {
+    margin-bottom: 20px;
+    /* Añade espacio entre el contenido del footer y los íconos */
+}
+
+.footer-info a {
+    color: #fff;
+    /* Cambia el color de los enlaces a tu preferencia */
+    text-decoration: none;
+    /* Quita la decoración de subrayado de los enlaces */
+}
+
+.footer-info p {
+    margin-top: 10px;
+    /* Añade espacio sobre el texto */
+}
+
+.ancors-container {
+    list-style: none;
+    /* Quita los estilos de la lista */
+    padding: 0;
+    /* Elimina el relleno predeterminado de la lista */
+    margin: 0;
+    /* Elimina el margen predeterminado de la lista */
+}
+
+.ancors-container li {
+    display: inline-block;
+    /* Coloca los íconos en línea */
+    margin-right: 9px;
+    /* Añade espacio entre los íconos */
+}
+
+.ancors-container a {
+    color: #fff;
+    /* Cambia el color de los enlaces a tu preferencia */
+    text-decoration: none;
+    /* Quita la decoración de subrayado de los enlaces */
+}
+
+/* Agrega estilos para los íconos */
+.svg {
+    width: 30px;
+    /* Establece el ancho de los íconos */
+    height: 30px;
+    /* Establece la altura de los íconos */
+}
+
+.contact-email img {
+    /* width: 32px; */
+    /* Establece el ancho del ícono de correo electrónico */
+    /* height: 30px; */
+    /* Establece la altura del ícono de correo electrónico */
+    /* margin-right: 5px; */
+    /* Añade espacio entre el ícono y el texto */
+}

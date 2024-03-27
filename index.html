@@ -17,71 +17,44 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
-<body class="container-fluid bg_animate  theme-light">
-  <aside class=" h-100 overflow-auto">
-    <!-- Contenido de la barra lateral -->
+<body class="container bg_animate  theme-dark">
+  <main>
     <nav id="navbar" class="navbar">
       <div class="d-flex align-items-center">
         <img width="40px" height="40px" src="icons/favicon-32x32.png" alt="Nahuel López Logo Image"
           class="rounded-circle mr-2">
       </div>
       <div class="d-flex align-items-center">
-        <div class="social-icons mr-2">
-          <a href="mailto:nahuel.alm@outlook.com" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" class="text-decoration-none"><i
-              class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/nahuioh" target="_blank" class="text-decoration-none"><i
-              class="fab fa-github"></i></a>
-        </div>
+        <ul icons class="ancors-container d-flex align-items-center justify-content-center">
+          <li icons loading="lazy">
+            <a icons href="mailto:nahuel.alm@outlook.com" class="contact-email">
+              <img width="40px" height="40px" icons id="email" src="icons/mail.svg" alt="github" class="email-svg">
+            </a>
+          </li>
+          <li icons><a icons href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" rel="noopener"><img icons
+                id="linkedin" src="icons/linkedin.svg" alt="linkedin" class="svg"></a></li>
+          <li icons><a icons href="https://github.com/nahuioh" target="_blank" rel="noopener"><img icons id="github"
+                src="icons/github.svg" alt="github" class="svg"></a></li>
+        </ul>
         <label class="form-switch toggle-switch" data-aos="fade-down">
           <input class="form-check-input " type="checkbox" id="themeToggle">
-          <img id="sun-icon" src="icons/sun.svg" width="24" height="24" loading="lazy" class="img-fluid" />
-          <img id="moon-icon" src="icons/moon.svg" width="24" height="24" loading="lazy" class="hidden" />
+          <img id="sun-icon" src="icons/sun.svg" width="30" height="30" loading="lazy" class="img-fluid" />
+          <img id="moon-icon" src="icons/moon.svg" width="30" height="30" loading="lazy" class="hidden" />
         </label>
       </div>
     </nav>
-    <div class="container overflow-hidden  align-content-around  h-100" id="navbar-desktop" style="display: none;">
-      <div class="d-grid">
-        <div class="mt-4 d-flex">
-          <img width="40px" height="40px" src="icons/favicon-32x32.png" alt="Nahuel López Logo Image"
-            class="rounded-circle mr-2">
-          <h2 class="mt-4">Nahuel López</h2>
-        </div>
-        <div class="social-icons d-flex justify-content-between">
-          <a href="mailto:nahuel.alm@outlook.com" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" class="text-decoration-none"><i
-              class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/nahuioh" target="_blank" class="text-decoration-none"><i
-              class="fab fa-github"></i></a>
-          <label class="form-switch toggle-switch align-items-start" data-aos="fade-down">
-            <input class="form-check-input " type="checkbox" id="themeToggleDesktop">
-            <img id="sun-icon-desktop" src="icons/sun.svg" width="32" height="32" loading="lazy" class="img-fluid" />
-            <img id="moon-icon-desktop" src="icons/moon.svg" width="32" height="32" loading="lazy" class="hidden" />
-          </label>
-        </div>
-        <div class="img-fluid banner_img">
-          <img class="w-100 h-75" src="images/logo-flotador.png" alt="Descripción de la imagen">
-        </div>
+    <!-- codigo + ACERCA DE MI -->
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <pre>1&nbsp;class <b>Person</b> <!-- -->{</pre>
+        <pre>2&nbsp;&nbsp; constructor() <!-- -->{</pre>
+        <pre>3&nbsp;&nbsp;&nbsp; this.name = "<b>Nahuel López</b>";</pre>
+        <pre>4&nbsp;&nbsp;&nbsp; this.traits = ["<b>DESIGN</b>", "<b>DEV</b>"];</pre>
+        <pre>5&nbsp;&nbsp;&nbsp; this.age = <!-- -->new Date().getFullYear() - 1993;</pre>
+        <pre>6&nbsp;&nbsp; <!-- -->}</pre>
+        <pre>7&nbsp;<!-- -->}</pre>
       </div>
-    </div>
-  </aside>
-  <main>
-    <!-- IMAGEN + ACERCA DE MI -->
-    <div class=" mt-2">
-      <div class="row mb-5">
-        <div class="col-md-12">
-          <pre>1&nbsp;class <b>Person</b> <!-- -->{</pre>
-          <pre>2&nbsp;&nbsp; constructor() <!-- -->{</pre>
-          <pre>3&nbsp;&nbsp;&nbsp; this.name = "<b>Nahuel López</b>";</pre>
-          <pre>4&nbsp;&nbsp;&nbsp; this.traits = ["<b>DESIGN</b>", "<b>DEV</b>"];</pre>
-          <pre>5&nbsp;&nbsp;&nbsp; this.age = <!-- -->new Date().getFullYear() - 1993;</pre>
-          <pre>6&nbsp;&nbsp; <!-- -->}</pre>
-          <pre>7&nbsp;<!-- -->}</pre>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 move-element mb-5" data-aos="fade-up">
+      <div class="col-md-6 move-element" data-aos="fade-up">
         <div class="card-text">
           Como desarrollador frontend, me especializo en la creación de experiencias web dinámicas y atractivas. He
           dedicado tiempo a perfeccionar mis habilidades en el Desarrollo de Aplicaciones Web, obteniendo
@@ -93,6 +66,7 @@
           desarrollo de soluciones web de calidad que ofrezcan experiencias únicas y satisfactorias a los usuarios.
         </div>
         <button class="btn btn-primary ">
+          <img _ngcontent-ng-c842918903="" src="icons/file-download.svg" alt="file" class="svg-download">
           <a href="proyects/cv.pdf" download="cv.pdf" class="text-decoration-none">Descargar CV</a>
         </button>
       </div>
@@ -352,18 +326,13 @@
       <div class="container-iframe ">
         <h2 class="card-title mb-4">Javascript Libraries</h2>
         <iframe src="https://codepen.io/nahuelsl/embed/abxywJo" class="styled-iframe" frameborder="0"
-          allowfullscreen></iframe>
-        <iframe src="https://codepen.io/nahuelsl/embed/RwOZgLp" class="styled-iframe" frameborder="0" scrolling="no"
-          allowfullscreen></iframe>
-          <iframe src="https://codepen.io/nahuelsl/embed/MWRvoZM" class="styled-iframe"  style="height: 800px;" frameborder="0" scrolling="no"
-          allowfullscreen></iframe>
+          scrolling="no"></iframe>
+        <iframe src="https://codepen.io/nahuelsl/embed/RwOZgLp" class="styled-iframe" frameborder="0"
+          scrolling="no"></iframe>
+        <iframe src="https://codepen.io/nahuelsl/embed/MWRvoZM" class="styled-iframe" frameborder="0"
+          scrolling="no"></iframe>
       </div>
     </div>
-    <footer class="col pt-4">
-      <p style="float:right">Made with ❤️ and<a href="https://github.com"
-          target="__blank">&nbsp;github&nbsp;</a>by<a href="https://github.com/nahuioh"
-          target="__blank">&nbsp;Nahuel</a></p>
-    </footer>
   </main>
   <!-- Scripts al final del body -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
