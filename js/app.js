@@ -7,6 +7,10 @@
       }
     });
   }
+ // Función para animar los elementos cuando entran en el viewport
+ document.addEventListener("DOMContentLoaded", function() {
+  AOS.init();
+});
 
   // Configurar IntersectionObserver
   const observer = new IntersectionObserver(animateOnScroll, {

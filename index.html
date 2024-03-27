@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body class="container-fluid bg_animate  theme-light">
-  <body class="d-flex justify-content-end">
   <aside class=" h-100 overflow-auto">
     <!-- Contenido de la barra lateral -->
     <nav class="navbar navbar-dark">
@@ -46,7 +46,7 @@
             <img class="w-100 h-100" src="images/logo-flotador.png" alt="Descripción de la imagen">
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 move-element">
           <div class="card-text">
             Como desarrollador frontend, me especializo en la creación de experiencias web dinámicas y atractivas. He
             dedicado tiempo a perfeccionar mis habilidades en el Desarrollo de Aplicaciones Web, obteniendo
@@ -61,10 +61,7 @@
       </div>
     </div>
     <!-- PROYECTOS -->
-    <div class="row animate-on-scroll mb-4" id="proyectos">
-      <div class="col-12">
-        <h2 class="text-center mb-4">Proyectos</h2>
-      </div>
+    <div class="row animate-on-scroll mb-4 move-element">
       <!-- Aquí van los proyectos -->
       <div class="col-sm-4 mb-2">
         <div class="shadow-sm card">
@@ -122,199 +119,194 @@
       </div>
     </div>
     <!-- CERTIFICACIONES -->
-    <div class="row animate-on-scroll">
+    <div class="row">
       <div class="col">
-        <h2 class="text-center mb-4">Certificaciones y Cursos</h2>
-        <div class="row">
-          <div class="col">
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/VY674V4UM3AD" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Agile Project Management</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Septiembre de 2023
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/9C6JLEGE7D3Q" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Foundations of Project Management</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Septiembre de 2023
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/HE9W22LXMPYZ" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Project Execution: Running the Project</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Septiembre de 2023
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/FZSNA5VXKNAY" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Project Planning: Putting It All Together</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Septiembre de 2023<br>
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.freecodecamp.org/espanol/certification/nahuelsl/front-end-development-libraries"
-                  target="_blank" class="text-decoration-none">
-                  <h5 class="card-title">Front End Development Libraries</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Noviembre de 2022
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.udemy.com/certificate/UC-835098ff-88b7-4bd8-a01e-eed639e132ea/" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">JavaScript Ultimate Guide 2022</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Julio de 2022
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.udemy.com/certificate/UC-f9f87e83-1197-4800-88f6-1155349a654f/" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Aprende Typescript de 0 a 100</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Julio de 2021
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.udemy.com/certificate/UC-9601455c-62f5-42a4-b100-536cbf5ec3d5/" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">React native Expo for multiplatform mobile</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Julio de 2021
-                </p>
-              </div>
-            </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/VY674V4UM3AD" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Agile Project Management</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Septiembre de 2023
+            </p>
           </div>
-          <div class="col">
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.freecodecamp.org/certification/nahuelsl/javascript-algorithms-and-data-structures"
-                  target="_blank" class="text-decoration-none">
-                  <h5 class="card-title">JavaScript Algorithms and Data Structures</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Enero de 2021
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.freecodecamp.org/certification/nahuelsl/responsive-web-design" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Responsive Web Design</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Enero de 2021
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.udemy.com/certificate/UC-45a425a2-9dbd-4f79-984e-0a78c4ee5455/" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">GitFlow en Gitlab y Github</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Mayo de 2021
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/DUR8T5B7HL3T" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Google Cloud Platform Fundamentals</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Junio de 2021
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://curso.lemon.me/certificates/sy0mrvzz9b" target="_blank" class="text-decoration-none">
-                  <h5 class="card-title">Crypto Lemon</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Diciembre de 2023<br>
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/HTHPMC7JDK2E" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Foundations of Business Intelligence</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Noviembre de 2023<br>
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/CZ62ZUFNKC7R" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">The Path to Insights</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Noviembre de 2023
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/6TTLXMG6DEXT" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Project Initiation</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Septiembre de 2023
-                </p>
-              </div>
-            </div>
-            <div class="card mb-2">
-              <div class="card-body">
-                <a href="https://www.udemy.com/certificate/UC-49767b85-261d-4cc8-bf16-2f21a69b8627/" target="_blank"
-                  class="text-decoration-none">
-                  <h5 class="card-title">Redux con React hooks y GraphQL</h5>
-                </a>
-                <p class="card-text">
-                  <strong>Expedición:</strong> Mayo de 2021
-                </p>
-              </div>
-            </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up" >
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/9C6JLEGE7D3Q" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Foundations of Project Management</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Septiembre de 2023
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/HE9W22LXMPYZ" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Project Execution: Running the Project</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Septiembre de 2023
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/FZSNA5VXKNAY" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Project Planning: Putting It All Together</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Septiembre de 2023<br>
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.freecodecamp.org/espanol/certification/nahuelsl/front-end-development-libraries"
+              target="_blank" class="text-decoration-none">
+              <h5 class="card-title">Front End Development Libraries</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Noviembre de 2022
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.udemy.com/certificate/UC-835098ff-88b7-4bd8-a01e-eed639e132ea/" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">JavaScript Ultimate Guide 2022</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Julio de 2022
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.udemy.com/certificate/UC-f9f87e83-1197-4800-88f6-1155349a654f/" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Aprende Typescript de 0 a 100</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Julio de 2021
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.udemy.com/certificate/UC-9601455c-62f5-42a4-b100-536cbf5ec3d5/" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">React native Expo for multiplatform mobile</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Julio de 2021
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.freecodecamp.org/certification/nahuelsl/javascript-algorithms-and-data-structures"
+              target="_blank" class="text-decoration-none">
+              <h5 class="card-title">JavaScript Algorithms and Data Structures</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Enero de 2021
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.freecodecamp.org/certification/nahuelsl/responsive-web-design" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Responsive Web Design</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Enero de 2021
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.udemy.com/certificate/UC-45a425a2-9dbd-4f79-984e-0a78c4ee5455/" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">GitFlow en Gitlab y Github</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Mayo de 2021
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/DUR8T5B7HL3T" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Google Cloud Platform Fundamentals</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Junio de 2021
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://curso.lemon.me/certificates/sy0mrvzz9b" target="_blank" class="text-decoration-none">
+              <h5 class="card-title">Crypto Lemon</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Diciembre de 2023<br>
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/HTHPMC7JDK2E" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Foundations of Business Intelligence</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Noviembre de 2023<br>
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/CZ62ZUFNKC7R" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">The Path to Insights</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Noviembre de 2023
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2" data-aos="fade-up">
+          <div class="card-body">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/6TTLXMG6DEXT" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Project Initiation</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Septiembre de 2023
+            </p>
+          </div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-body">
+            <a href="https://www.udemy.com/certificate/UC-49767b85-261d-4cc8-bf16-2f21a69b8627/" target="_blank"
+              class="text-decoration-none">
+              <h5 class="card-title">Redux con React hooks y GraphQL</h5>
+            </a>
+            <p class="card-text">
+              <strong>Expedición:</strong> Mayo de 2021
+            </p>
           </div>
         </div>
       </div>
@@ -324,6 +316,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/app.js"></script>
 </body>
 

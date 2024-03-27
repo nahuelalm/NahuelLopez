@@ -1,8 +1,18 @@
 /* Estilos comunes */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FUTURA', sans-serif;
     font-size: 16px;
     line-height: 1.6;
+}
+body.theme-light {
+    background: #e4e1e1;
+    .card-text {
+        color:#003c00;
+    }
+    a {
+        color: #5a76cc  ;
+        transition: color 0.3s ease;
+    }
 }
 
 h1,
@@ -24,10 +34,7 @@ p {
     font-style: italic;
 }
 
-a {
-    color: #6188FF;
-    transition: color 0.3s ease;
-}
+
 
 a:hover {
     color: #415EA3;
@@ -35,22 +42,26 @@ a:hover {
 
 /* Estilos para el modo oscuro */
 .theme-dark {
-    background: #101d21;
+    background: #0d1117;
 }
 
 .theme-dark .card-text,
 .theme-dark h2 {
-    color: #ecdfdb;
+    color: #E6EDF3;
 }
-
+.theme-dark .card {
+    background: transparent;
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
 .theme-dark a {
-    color: #6188FF;
+    color: #95abec;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .theme-dark a:hover {
-    color: #415EA3;
+    color: #4493F8;
 }
 
 .theme-dark i {
@@ -68,11 +79,17 @@ a:hover {
     fill: #FFFFFF;
     padding: 5px 10px;
     /* Ajusta el relleno según sea necesario */
-    border: 2px solid #ccc;
+    border: 1px solid #eaeaea;
     /* Ancho y color del borde */
     border-radius: 20px;
     /* Redondea las esquinas del badge */
     margin-bottom: 4px;
+}
+.theme-dark .card-title {
+    color: #e6edf3;
+    font-size: 16px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
 }
 
 /* Estilos para el modo claro */
@@ -89,19 +106,14 @@ a:hover {
     /* Color de fondo en modo claro */
 }
 
-/* Estilos de las tarjetas */
-.card {
+.theme-light .card {
     background: transparent;
-    border: 1px solid #ccc;
+    border: 1px solid #848D97;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.card-text {
-    /*color: */
-}
-
-.card-title {
-    /*color: */
+.theme-light .card-title {
+    color: #1c1c1c;
     font-size: 16px;
     margin-bottom: 8px;
     transition: color 0.3s ease;
@@ -194,7 +206,7 @@ a:hover {
 
 /* Estilos del pulgar de desplazamiento */
 ::-webkit-scrollbar-thumb {
-    background-color: #415EA3;
+    /* background-color: #415EA3; */
     /* Color de fondo del pulgar de desplazamiento */
     border-radius: 3px;
     /* Radio de borde del pulgar de desplazamiento */
@@ -235,4 +247,20 @@ a:hover {
         padding: 24px;
         margin-top: 0;
     }
+}
+
+@keyframes mover {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.move-element {
+    animation: mover 2s forwards;
 }
