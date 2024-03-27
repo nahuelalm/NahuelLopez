@@ -205,9 +205,7 @@ a:hover {
     background-color: #6188FF;
     /* Cambia el color de fondo del pulgar de desplazamiento al pasar el ratón */
 }
-aside {
-    padding: 0 24px 0 24px;
-}
+
 /* Estilos para dispositivos con una pantalla de 800px o más */
 @media (min-width: 768px) {
 
