@@ -5,26 +5,7 @@ body {
     line-height: 1.6;
 }
 
-body.theme-light {
-    background: #e4e1e1;
-
-    .card-text {
-        color: #003c00;
-    }
-
-    a {
-        color: #5a76cc;
-        transition: color 0.3s ease;
-    }
-
-    button a {
-        color: #fff;
-    }
-}
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
@@ -41,8 +22,6 @@ p {
     font-style: italic;
 }
 
-
-
 a:hover {
     color: #415EA3;
 }
@@ -56,8 +35,10 @@ a:hover {
 .theme-dark h2,
 .theme-dark button>a,
 .theme-dark pre,
-.theme-dark p {
-    color: #E6EDF3;
+.theme-dark p,
+.theme-dark a {
+    color: #fff!important;
+    transition: color 0.3s ease;
 }
 
 .theme-dark .card {
@@ -90,11 +71,8 @@ a:hover {
 .theme-dark .badge {
     fill: #FFFFFF;
     padding: 5px 10px;
-    /* Ajusta el relleno según sea necesario */
     border: 1px solid #eaeaea;
-    /* Ancho y color del borde */
     border-radius: 20px;
-    /* Redondea las esquinas del badge */
     margin-bottom: 4px;
 }
 
@@ -108,15 +86,10 @@ a:hover {
 /* Estilos para el modo claro */
 .theme-light .badge {
     padding: 5px 10px;
-    /* Ajusta el relleno según sea necesario */
     border: 1px solid #000;
-    /* Ancho y color del borde en modo claro */
     border-radius: 20px;
-    /* Redondea las esquinas del badge */
     color: #fff;
-    /* Color del texto en modo claro */
     background-color: #415EA3;
-    /* Color de fondo en modo claro */
 }
 
 .theme-light .card {
@@ -158,7 +131,6 @@ a:hover {
 }
 
 .social-icons a {
-    /*color: */
     font-size: 24px;
     margin-right: 8px;
 }
@@ -180,7 +152,6 @@ a:hover {
 }
 
 .toggle-switch i {
-    /*color: */
     font-size: 23px;
     padding-left: 2px;
     cursor: pointer;
@@ -213,23 +184,15 @@ a:hover {
 /* Estilos de la barra de desplazamiento */
 ::-webkit-scrollbar {
     width: 8px;
-    /* Ancho de la barra de desplazamiento */
 }
 
-/* Estilos del pulgar de desplazamiento */
 ::-webkit-scrollbar-thumb {
-    /* background-color: #415EA3; */
-    /* Color de fondo del pulgar de desplazamiento */
     border-radius: 3px;
-    /* Radio de borde del pulgar de desplazamiento */
 }
 
-/* Cambia el color de la barra de desplazamiento cuando está sobre ella */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #6188FF;
-    /* Cambia el color de fondo del pulgar de desplazamiento al pasar el ratón */
 }
-
 
 @keyframes mover {
     0% {
@@ -249,75 +212,27 @@ a:hover {
 
 .styled-iframe {
     width: 100%;
-    /* Establece el ancho al 100% para ocupar todo el ancho disponible */
     height: 400px;
-    /* Establece la altura a 300px */
     border-radius: 20px;
-    /* Agrega bordes redondeados */
-}
-
-footer {
-    background-color: #333;
-    /* Cambia el color de fondo a tu preferencia */
-    color: #fff;
-    /* Cambia el color del texto a tu preferencia */
-    padding: 20px;
-    /* Añade espacio alrededor del contenido del footer */
-}
-
-.footer-info {
-    margin-bottom: 20px;
-    /* Añade espacio entre el contenido del footer y los íconos */
-}
-
-.footer-info a {
-    color: #fff;
-    /* Cambia el color de los enlaces a tu preferencia */
-    text-decoration: none;
-    /* Quita la decoración de subrayado de los enlaces */
-}
-
-.footer-info p {
-    margin-top: 10px;
-    /* Añade espacio sobre el texto */
 }
 
 .ancors-container {
     list-style: none;
-    /* Quita los estilos de la lista */
     padding: 0;
-    /* Elimina el relleno predeterminado de la lista */
     margin: 0;
-    /* Elimina el margen predeterminado de la lista */
 }
 
 .ancors-container li {
     display: inline-block;
-    /* Coloca los íconos en línea */
     margin-right: 9px;
-    /* Añade espacio entre los íconos */
 }
 
 .ancors-container a {
     color: #fff;
-    /* Cambia el color de los enlaces a tu preferencia */
     text-decoration: none;
-    /* Quita la decoración de subrayado de los enlaces */
 }
 
-/* Agrega estilos para los íconos */
 .svg {
     width: 30px;
-    /* Establece el ancho de los íconos */
     height: 30px;
-    /* Establece la altura de los íconos */
-}
-
-.contact-email img {
-    /* width: 32px; */
-    /* Establece el ancho del ícono de correo electrónico */
-    /* height: 30px; */
-    /* Establece la altura del ícono de correo electrónico */
-    /* margin-right: 5px; */
-    /* Añade espacio entre el ícono y el texto */
 }
