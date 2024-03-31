@@ -88,8 +88,8 @@ a:hover {
     padding: 5px 10px;
     border: 1px solid #000;
     border-radius: 20px;
-    color: #fff;
-    background-color: #415EA3;
+    color: #000;
+    background-color: #fff;
 }
 .theme-light .ancors-container img {
     filter: grayscale(100%) brightness(0%) sepia(100%) hue-rotate(50deg) saturate(500%);
@@ -241,7 +241,7 @@ a:hover {
     width: 30px;
     height: 30px;
 }
-
-.card-img-top {
-     min-height: 300px;
+.img-equal-size {
+    height: 200px; /* Establece la altura deseada */
+    width: auto; /* Ajusta automáticamente la anchura */
 }
