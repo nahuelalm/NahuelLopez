@@ -245,3 +245,9 @@ a:hover {
     height: 200px; /* Establece la altura deseada */
     width: auto; /* Ajusta automáticamente la anchura */
 }
+.card-body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
