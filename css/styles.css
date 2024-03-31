@@ -91,7 +91,9 @@ a:hover {
     color: #fff;
     background-color: #415EA3;
 }
-
+.theme-light .ancors-container img {
+    filter: grayscale(100%) brightness(0%) sepia(100%) hue-rotate(50deg) saturate(500%);
+}
 .theme-light .card {
     background: transparent;
     border: 1px solid #848D97;
@@ -238,4 +240,8 @@ a:hover {
 .svg {
     width: 30px;
     height: 30px;
+}
+
+.card-img-top {
+     min-height: 300px;
 }
