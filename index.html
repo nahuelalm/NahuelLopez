@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nahuel López</title> <!-- Título de la página -->
-  <meta name="description" content="Este es mi portfolio!"> <!-- Metadescripción -->
-  <!-- Favicon -->
+  <title>Nahuel López</title>
+  <meta name="description" content="Este es mi portfolio!">
   <link rel="icon" href="icons/favicon-16x16.png" type="image/x-icon">
-  <!-- Estilos CSS externos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,15 +15,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
-<body class="container-fuild bg_animate  theme-dark">
-  <main>
+<body class="theme-dark">
+  <main class="container ">
     <nav id="navbar" class="navbar mb-4">
       <div class="d-flex align-items-center">
         <img width="40px" height="40px" src="icons/favicon-32x32.png" alt="Nahuel López Logo Image"
           class="rounded-circle mr-2">
       </div>
       <div class="d-flex align-items-center">
-        <ul icons class="ancors-container d-flex align-items-center justify-content-center">
+        <ol icons class=" breadcrumb ancors-container d-flex align-items-center justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="certificados.html">Certificados</a></li>
           <li icons loading="lazy">
             <a icons href="mailto:nahuel.alm@outlook.com" class="contact-email">
               <img width="40px" height="40px" icons id="email" src="icons/mail.svg" alt="github" class="email-svg">
@@ -35,8 +35,8 @@
                 id="linkedin" src="icons/linkedin.svg" alt="linkedin" class="svg"></a></li>
           <li icons><a icons href="https://github.com/nahuioh" target="_blank" rel="noopener"><img icons id="github"
                 src="icons/github.svg" alt="github" class="svg"></a></li>
-        </ul>
-        <label class="form-switch toggle-switch" data-aos="fade-down">
+        </ol>
+        <label class="form-switch toggle-switch">
           <input class="form-check-input " type="checkbox" id="themeToggle">
           <img id="sun-icon" src="icons/sun.svg" width="30" height="30" loading="lazy" class="" />
           <img id="moon-icon" src="icons/moon.svg" width="30" height="30" loading="lazy" class="hidden" />
@@ -44,346 +44,116 @@
       </div>
     </nav>
     <!-- codigo + ACERCA DE MI -->
-    <section class="section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-6">
-            <pre>1&nbsp;class <b>Person</b> <!-- -->{</pre>
-            <pre>2&nbsp;&nbsp; constructor() <!-- -->{</pre>
-            <pre>3&nbsp;&nbsp;&nbsp; this.name = "<b>Nahuel López</b>";</pre>
-            <pre>4&nbsp;&nbsp;&nbsp; this.traits = ["<b>DESIGN</b>", "<b>DEV</b>"];</pre>
-            <pre>5&nbsp;&nbsp;&nbsp; this.age = <!-- -->new Date().getFullYear() - 1993;</pre>
-            <pre>6&nbsp;&nbsp; <!-- -->}</pre>
-            <pre>7&nbsp;<!-- -->}</pre>
+    <section>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <pre>1&nbsp;class <b>Person</b> <!-- -->{</pre>
+          <pre>2&nbsp;&nbsp; constructor() <!-- -->{</pre>
+          <pre>3&nbsp;&nbsp;&nbsp; this.name = "<b>Nahuel López</b>";</pre>
+          <pre>4&nbsp;&nbsp;&nbsp; this.traits = ["<b>DESIGN</b>", "<b>DEV</b>"];</pre>
+          <pre>5&nbsp;&nbsp;&nbsp; this.age = <!-- -->new Date().getFullYear() - 1993;</pre>
+          <pre>6&nbsp;&nbsp; <!-- -->}</pre>
+          <pre>7&nbsp;<!-- -->}</pre>
+        </div>
+        <div class="col-md-6">
+          <div class="card-text">
+            Como desarrollador frontend, me especializo en la creación de experiencias web dinámicas y atractivas. He
+            dedicado tiempo a perfeccionar mis habilidades en el Desarrollo de Aplicaciones Web, obteniendo
+            certificaciones en diseño web responsive, algoritmos y estructuras de datos en JavaScript.
           </div>
-          <div class="col-md-6 move-element" data-aos="fade-up">
-            <div class="card-text">
-              Como desarrollador frontend, me especializo en la creación de experiencias web dinámicas y atractivas. He
-              dedicado tiempo a perfeccionar mis habilidades en el Desarrollo de Aplicaciones Web, obteniendo
-              certificaciones en diseño web responsive, algoritmos y estructuras de datos en JavaScript.
-            </div>
-            <div class="card-text mb-3">
-              Mi objetivo es continuar creciendo como profesional en el campo del desarrollo web, buscando constantemente
-              nuevas oportunidades para aprender y aplicar tecnologías innovadoras. Estoy comprometido a contribuir al
-              desarrollo de soluciones web de calidad que ofrezcan experiencias únicas y satisfactorias a los usuarios.
-            </div>
-            <button class="btn btn-primary ">
-              <img _ngcontent-ng-c842918903="" src="icons/file-download.svg" alt="file" class="svg-download">
-              <a href="proyects/cv.pdf" download="cv.pdf" class="text-decoration-none">Descargar CV</a>
-            </button>
+          <div class="card-text mb-3">
+            Mi objetivo es continuar creciendo como profesional en el campo del desarrollo web, buscando
+            constantemente
+            nuevas oportunidades para aprender y aplicar tecnologías innovadoras. Estoy comprometido a contribuir al
+            desarrollo de soluciones web de calidad que ofrezcan experiencias únicas y satisfactorias a los usuarios.
           </div>
+          <button class="btn btn-primary ">
+            <img _ngcontent-ng-c842918903="" src="icons/file-download.svg" alt="file" class="svg-download">
+            <a href="proyects/cv.pdf" download="cv.pdf" class="text-decoration-none">Descargar CV</a>
+          </button>
         </div>
       </div>
     </section>
     <!-- PROYECTOS -->
-    <section class="section move-element animate-on-scroll mb-4">
-      <div class="container">
-        <div class="row">
+    <section class="mb-4">
+      <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
           <!-- Proyecto 1 -->
-          <div class="col-md-4 d-flex flex-column" data-aos="fade-up">
-            <div class="card shadow flex-grow-1">
-              <img src="images/screen_coin_alert_new.png" class="card-body img-equal-size" alt="coin alert new">
-              <div class="card-body card-body-container">
-                <h5 class="card-title">Coin Alert New</h5>
-                <p class="card-text">Coin Alert New: ¡Recibe notificaciones instantáneas sobre cambios en el precio de tus criptomonedas favoritas! Mantente al tanto de las fluctuaciones del mercado y toma decisiones informadas.</p>
-                <a href="https://coin-alert-new-huln.vercel.app/" target="_blank" alt="Weather App" class="btn btn-primary  mt-2 mb-2">Ver Proyecto</a>
-                <div class="badge-container mt-2">
-                  <span class="badge badge-primary">React</span>
-                  <span class="badge badge-primary">Next</span>
-                  <span class="badge badge-primary">Typescript</span>
-                  <span class="badge badge-primary">css</span>
-                  <!-- Agrega más badges según las tecnologías utilizadas -->
+          <div class="carousel-item active">
+            <div class=" d-flex flex-column">
+              <div class="card shadow flex-grow-1">
+                <img src="images/screen_coin_alert_new.png" class="img-equal-size" alt="coin alert new">
+                <div class="card-body card-body-container">
+                  <h5 class="card-title">Coin Alert New</h5>
+                  <a href="https://coin-alert-new-huln.vercel.app/" target="_blank" alt="Weather App"
+                    class="btn btn-primary  mt-2 mb-2">Ver Proyecto</a>
+                  <div class="badge-container mt-2">
+                    <span class="badge badge-primary">React</span>
+                    <span class="badge badge-primary">Next</span>
+                    <span class="badge badge-primary">Typescript</span>
+                    <span class="badge badge-primary">css</span>
+                    <!-- Agrega más badges según las tecnologías utilizadas -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Proyecto 2 -->
-          <div class="col-md-4  d-flex flex-column" data-aos="fade-up">
-            <div class="card shadow flex-grow-1">
-              <img src="images/screen_weather.png" class="card-body img-equal-size" alt="Wheather App">
-              <div class="card-body card-body-container">
-                <h5 class="card-title">Wheather App</h5>
-                <p class="card-text">Weather App: Obtén notificaciones instantáneas sobre cambios en el clima de tus ubicaciones favoritas! Mantente al tanto de las condiciones atmosféricas y planifica tus actividades al aire libre con confianza.</p>
-                <a href="https://weather-app-iota-eight-91.vercel.app/" target="_blank" class="btn btn-primary mt-2 mb-2">Ver Proyecto</a>
-                <div class="badge-container mt-2">
-                  <span class="badge badge-primary">Javascript</span>
-                  <span class="badge badge-primary">html 5</span>
-                  <span class="badge badge-primary">css</span>
-                  <span class="badge badge-primary">Weather API</span>
-                  <!-- Agrega más badges según las tecnologías utilizadas -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column">
+              <div class="card shadow flex-grow-1">
+                <img src="images/screen_weather.png" class="img-equal-size" alt="Wheather App">
+                <div class="card-body card-body-container">
+                  <h5 class="card-title">Wheather App</h5>
+                  <a href="https://weather-app-iota-eight-91.vercel.app/" target="_blank"
+                    class="btn btn-primary mt-2 mb-2">Ver Proyecto</a>
+                  <div class="badge-container mt-2">
+                    <span class="badge badge-primary">Javascript</span>
+                    <span class="badge badge-primary">html 5</span>
+                    <span class="badge badge-primary">css</span>
+                    <span class="badge badge-primary">Weather API</span>
+                    <!-- Agrega más badges según las tecnologías utilizadas -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Proyecto 3 -->
-          <div class="col-md-4 d-flex flex-column" data-aos="fade-up">
-            <div class="card shadow  flex-grow-1">
-              <img src="images/screen_qr_generate_code.png" class="card-body img-equal-size" alt="Imagen del proyecto">
-              <div class="card-body card-body-container">
-                <h5 class="card-title">QR code generate</h5>
-                <p class="card-text">
-                  Genera fácilmente códigos QR personalizados para enlaces, textos y más con nuestro generador de códigos QR. ¡Crea tus propios códigos QR de manera rápida y sencilla
-                </p>
-                <a target="_blank" href="https://qr-code-generate-6a08zni5h-nahuels-projects-205ef515.vercel.app/" class="btn btn-primary  mt-2 mb-2">Ver Proyecto</a>
-                <div class="badge-container mt-2">
-                  <span class="badge badge-primary">JavaScript</span>
-                  <span class="badge badge-primary">html 5</span>
-                  <span class="badge badge-primary">css</span>
-                  <!-- Agrega más badges según las tecnologías utilizadas -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column">
+              <div class="card shadow  flex-grow-1">
+                <img src="images/screen_qr_generate_code.png" class="img-equal-size" alt="Imagen del proyecto">
+                <div class="card-body card-body-container">
+                  <h5 class="card-title">QR code generate</h5>
+                  <a target="_blank" href="https://qr-code-generate-6a08zni5h-nahuels-projects-205ef515.vercel.app/"
+                    class="btn btn-primary  mt-2 mb-2">Ver Proyecto</a>
+                  <div class="badge-container mt-2">
+                    <span class="badge badge-primary">JavaScript</span>
+                    <span class="badge badge-primary">html 5</span>
+                    <span class="badge badge-primary">css</span>
+                    <!-- Agrega más badges según las tecnologías utilizadas -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-target="#carouselControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
-    <!-- CERTIFICACIONES -->
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title mb-3">Certificaciones</h2>
-        <div class="row">
-          <!-- Tarjeta de certificación 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Agile Project Management</h5>
-                <p class="card-text">
-                  Expedición: Septiembre de 2023
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/VY674V4UM3AD" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Foundations of Project Management</h5>
-                <p class="card-text">
-                  Expedición: Septiembre de 2023
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/9C6JLEGE7D3Q" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow d-flex flex-column">
-              <div class="card-body flex-grow-1">
-                <h5 class="card-title">Project Execution: Running the Project</h5>
-                <p class="card-text">
-                  Expedición: Septiembre de 2023
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/HE9W22LXMPYZ" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 4 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Project Planning: Putting It All Together</h5>
-                <p class="card-text">
-                  Expedición: Septiembre de 2023
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/FZSNA5VXKNAY" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 5 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Front End Development Libraries</h5>
-                <p class="card-text">
-                  Expedición: Noviembre de 2022
-                </p>
-                <a href="https://www.freecodecamp.org/espanol/certification/nahuelsl/front-end-development-libraries"
-                  target="_blank" class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 6 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript Ultimate Guide 2022</h5>
-                <p class="card-text">
-                  Expedición: Julio de 2022
-                </p>
-                <a href="https://www.udemy.com/certificate/UC-835098ff-88b7-4bd8-a01e-eed639e132ea/" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 7 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Aprende Typescript de 0 a 100</h5>
-                <p class="card-text">
-                  Expedición: Julio de 2021
-                </p>
-                <a href="https://www.udemy.com/certificate/UC-f9f87e83-1197-4800-88f6-1155349a654f/" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 8 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">React native Expo for multiplatform mobile</h5>
-                <p class="card-text">
-                  Expedición: Julio de 2021
-                </p>
-                <a href="https://www.udemy.com/certificate/UC-9601455c-62f5-42a4-b100-536cbf5ec3d5/" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificación 9 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript Algorithms and Data Structures</h5>
-                <p class="card-text">
-                  Expedición: Enero de 2021
-                </p>
-                <a href="https://www.freecodecamp.org/certification/nahuelsl/javascript-algorithms-and-data-structures"
-                  target="_blank" class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificación 10 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Responsive Web Design</h5>
-                <p class="card-text">
-                  Expedición: Enero de 2021
-                </p>
-                <a href="https://www.freecodecamp.org/certification/nahuelsl/responsive-web-design" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 11 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">GitFlow en Gitlab y Github</h5>
-                <p class="card-text">
-                  Expedición: Mayo de 2021
-                </p>
-                <a href="https://www.udemy.com/certificate/UC-45a425a2-9dbd-4f79-984e-0a78c4ee5455/" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificación 12 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Google Cloud Platform Fundamentals</h5>
-                <p class="card-text">
-                  Expedición: Junio de 2021
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/DUR8T5B7HL3T" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificación 13 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Crypto Lemon</h5>
-                <p class="card-text">
-                  Expedición: Diciembre de 2023
-                </p>
-                <a href="https://curso.lemon.me/certificates/sy0mrvzz9b" target="_blank" class="btn btn-primary">Ver
-                  Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 14 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Foundations of Business Intelligence</h5>
-                <p class="card-text">
-                  Expedición: Noviembre de 2023
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/HTHPMC7JDK2E" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 15 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">The Path to Insights</h5>
-                <p class="card-text">
-                  Expedición: Noviembre de 2023
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/CZ62ZUFNKC7R" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 16 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Project Initiation</h5>
-                <p class="card-text">
-                  Expedición: Septiembre de 2023
-                </p>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/6TTLXMG6DEXT" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-          <!-- Certificación 17 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Redux con React hooks y GraphQL</h5>
-                <p class="card-text">
-                  Expedición: Mayo de 2021
-                </p>
-                <a href="https://www.udemy.com/certificate/UC-49767b85-261d-4cc8-bf16-2f21a69b8627/" target="_blank"
-                  class="btn btn-primary">Ver Certificado</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section move-element animate-on-scroll">
-      <div class="container">
-        <div class="col">
-          <div class="container-iframe ">
-            <h2 class="section-title mb-3">Javascript Libraries</h2>
-            <iframe src="https://codepen.io/nahuelsl/embed/abxywJo" class="styled-iframe" frameborder="0"
-              scrolling="no"></iframe>
-            <iframe src="https://codepen.io/nahuelsl/embed/RwOZgLp" class="styled-iframe" frameborder="0"
-              scrolling="no"></iframe>
-            <iframe src="https://codepen.io/nahuelsl/embed/MWRvoZM" class="styled-iframe" frameborder="0"
-              scrolling="no"></iframe>
-          </div>
-        </div>
-      </div>
+    <section>
+      <iframe src="https://codepen.io/nahuelsl/embed/abxywJo" class="styled-iframe" frameborder="0"
+        scrolling="no"></iframe>
+      <iframe src="https://codepen.io/nahuelsl/embed/RwOZgLp" class="styled-iframe" frameborder="0"
+        scrolling="no"></iframe>
+      <iframe src="https://codepen.io/nahuelsl/embed/MWRvoZM" class="styled-iframe" frameborder="0"
+        scrolling="no"></iframe>
     </section>
   </main>
   <!-- Scripts al final del body -->
@@ -391,8 +161,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
