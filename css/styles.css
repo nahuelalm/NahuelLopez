@@ -114,6 +114,10 @@ a:hover {
     border-radius: 20px;
     margin-right: 4px;
     margin-bottom: 4px;
+    &.badge-primary {
+        color:#000;
+        border-color: #000;
+    }
 }
 
 .social-icons a {
@@ -190,7 +194,7 @@ a:hover {
 }
 .img-equal-size {
     padding: 16px;
-    width: 100%; /* Ajusta el ancho automáticamente */
+    width: 99%; /* Ajusta el ancho automáticamente */
     height: 50vh; /* La altura máxima de la imagen será el 100% del viewport height */
 }
 
