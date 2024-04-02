@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
@@ -20,30 +20,20 @@
         <!-- Breadcrumb -->
         <nav id="navbar" class="navbar mb-4">
             <div class="d-flex align-items-center">
-              <img width="40px" height="40px" src="icons/favicon-32x32.png" alt="Nahuel López Logo Image"
-                class="rounded-circle mr-2">
+                <img src="../icons/favicon-32x32.png" alt="Nahuel López Logo Image" class="rounded-circle mr-2">
+                <label class="form-switch toggle-switch pl-3">
+                    <input class="form-check-input " type="checkbox" id="themeToggle">
+                    <img id="sun-icon" src="../icons/sun.svg" width="24" height="24" loading="lazy" />
+                    <img id="moon-icon" src="../icons/moon.svg" width="24" height="24" loading="lazy" class="hidden" />
+                </label>
             </div>
             <div class="d-flex align-items-center">
-              <ol icons class=" breadcrumb ancors-container d-flex align-items-center justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="certificados.html">Certificados</a></li>
-                <li icons loading="lazy">
-                  <a icons href="mailto:nahuel.alm@outlook.com" class="contact-email">
-                    <img width="40px" height="40px" icons id="email" src="icons/mail.svg" alt="github" class="email-svg">
-                  </a>
-                </li>
-                <li icons><a icons href="https://www.linkedin.com/in/nahuel-lm/" target="_blank" rel="noopener"><img icons
-                      id="linkedin" src="icons/linkedin.svg" alt="linkedin" class="svg"></a></li>
-                <li icons><a icons href="https://github.com/nahuioh" target="_blank" rel="noopener"><img icons id="github"
-                      src="icons/github.svg" alt="github" class="svg"></a></li>
-              </ol>
-              <label class="form-switch toggle-switch">
-                <input class="form-check-input " type="checkbox" id="themeToggle">
-                <img id="sun-icon" src="icons/sun.svg" width="30" height="30" loading="lazy" class="" />
-                <img id="moon-icon" src="icons/moon.svg" width="30" height="30" loading="lazy" class="hidden" />
-              </label>
+                <ol icons class=" breadcrumb d-flex align-items-center justify-content-center">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a>Certificados</a></li>
+                </ol>
             </div>
-          </nav>
+        </nav>
         <!-- CERTIFICACIONES -->
         <section>
             <div class="row">
@@ -277,10 +267,9 @@
         </section>
     </main>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

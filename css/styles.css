@@ -193,6 +193,28 @@ a:hover {
     height: 30px;
 }
 .img-equal-size {
+    padding: 16px;
     width: 100%; /* Ajusta el ancho automáticamente */
     height: 50vh; /* La altura máxima de la imagen será el 100% del viewport height */
+}
+
+section {
+    margin-bottom: 16px;
+}
+
+.theme-light .breadcrumb-item a{
+    color:#000;
+}
+
+.rounded-circle {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+.breadcrumb {
+    margin: 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  fill: black!; /* Cambia el color a negro */
 }
