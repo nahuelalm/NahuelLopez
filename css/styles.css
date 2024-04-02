@@ -85,10 +85,9 @@ a:hover {
 /* Estilos para el modo claro */
 .theme-light .badge {
     padding: 5px 10px;
-    border: 1px solid #000;
+    border: 1px solid #848D97;
     border-radius: 20px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
 }
 .theme-light .ancors-container img {
     filter: grayscale(100%) brightness(0%) sepia(100%) hue-rotate(50deg) saturate(500%);
@@ -108,11 +107,8 @@ a:hover {
     color: #fff;
 }
 
-.badge-container {
-    margin-top: 10px;
-}
-
 .badge {
+    font-size: 16px;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 20px;
@@ -217,4 +213,7 @@ section {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   fill: black!; /* Cambia el color a negro */
+}
+.carousel-caption {
+    padding: 0;
 }
