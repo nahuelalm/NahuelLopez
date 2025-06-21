@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#1d4ed8" />
+    
+    <!-- SEO -->
+    <meta name="description" content="Portfolio de Nahuel López - Desarrollador Full Stack con experiencia en .NET y React. Proyectos destacados y habilidades técnicas." />
+    <meta name="keywords" content="desarrollador, full stack, .NET, React, JavaScript, portfolio, Nahuel López" />
+    <meta name="author" content="Nahuel López" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nahuel López - Desarrollador Full Stack" />
+    <meta property="og:description" content="Portfolio de Nahuel López - Desarrollador Full Stack con experiencia en .NET y React" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nahuellopez.dev" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nahuel López - Desarrollador Full Stack" />
+    <meta name="twitter:description" content="Portfolio de Nahuel López - Desarrollador Full Stack con experiencia en .NET y React" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Favicon y Assets -->
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    
+    <!-- Preload -->
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    
+    <!-- Manifest y otros -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#1d4ed8" />
+    
+    <!-- Meta tags adicionales -->
+    <meta name="application-name" content="Portfolio Nahuel López" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio Nahuel López" />
+    <meta name="msapplication-TileColor" content="#1d4ed8" />
+    <meta name="msapplication-config" content="%PUBLIC_URL%/browserconfig.xml" />
+    
+    <title>Nahuel López - Desarrollador Full Stack</title>
+  </head>
+  
+  <body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Contenido principal -->
+    <div id="root" role="application" tabindex="-1"></div>
+    
+    <!-- Scripts -->
+    <script>
+      // Mejora de accesibilidad
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>
